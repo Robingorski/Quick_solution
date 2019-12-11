@@ -1,48 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
 }
 
-body {
-    margin: 0;
-
-}
-
-header {
-    height: inherit;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.landing__page-pickle {
-   object-fit: cover;
-}
-
-.nav__logo {
+.q-logo {
     width: 9rem;
 }
 
+header{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5ce82b63338ade0001773744/1560194358763-0FSEP70XI34IL8XXZEQQ/ke17ZwdGBToddI8pDm48kOxLRGAfd8DHyn-VO-OS79h7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlnKv1yxoTk5msUVUpzS-jwidPkl-46T667XTMzLYTMBnw/pickle-perfection-v1.jpg?format=2500w);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
 
-
-/* .header{
+ul {
     display: flex;
-    justify-content: flex-start;
     justify-content: space-between;
-    padding-top: 1.5rem;
+    align-items: center;
+    width: 31rem;
+    padding-top: 4.5rem;
+    padding-right: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 6.5rem;
+    list-style: none;
 }
 
-.nav__logo {
-    width: 9rem;
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
 }
 
-.nav__story {
-    color: orangered;    
+.quick_solution{
+    display: flex;
+    justify-content: center;
+    margin-top: 28rem;
+    color: white;
+    font-size: 4.8rem;
 }
 
-.landing__page {
-    display: flex; 
-}
+.contact {
+    display: flex;
+    justify-content: center;
+   
+    }
 
-.landing__page-pickle {
- width: 100%;
-} */
+    .contact__link {
+    background-color: white;
+    border: none;
+    color: #f08e80;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+ /*  transition-duration: 0.4s; */
+  cursor: pointer
+    }
+
+    .contact__link:hover {
+        background-color: #f08e80;
+        color: white;
+      }
