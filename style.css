@@ -70,3 +70,37 @@ ul li a {
         background-color: #f08e80;
         color: white;
       }
+
+      .onlyTheBest {
+        padding: 5.8rem
+      }
+
+      h2 {
+          font-size: 4.2rem;
+          margin-bottom: 3.4rem;
+          letter-spacing: 0.2rem;
+      }
+
+      p {
+          font-size: 1.7rem;
+      }
+
+      .vegi-pics {
+          display: flex;
+          padding: 4.8rem;
+      }
+
+      .pickle {
+        width: 42rem;
+        height: 42rem;
+      }
+
+      .cabage {
+        width: 42rem;
+        height: 42rem;
+      }
+
+      .chili {
+        width: 42rem;
+        height: 42rem;
+        }
