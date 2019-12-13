@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 62.5%;
 }
 
@@ -13,7 +13,6 @@ header {
     height: 100vh;
 }
 
-body {}
 
 ul {
     display: flex;
@@ -34,18 +33,16 @@ ul li a {
 }
 
 section {
-    min-height: 100vh;
-}
-
-h3 {
-    font-size: 3.7rem;
-    margin-bottom: 1.5rem;
+    height: 100vh;
 }
 
 p {
     font-size: 2.4rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-style: normal;
+    line-height: 4.3rem;
+    font-weight: 300;
 }
 
 .q-logo {
@@ -56,14 +53,28 @@ p {
     border-bottom: 1px solid black;
 }
 
-.our__story-section {
-    padding-left: 16rem;
-    padding-right: 16rem;
-    padding-bottom: 8.5rem;
+.our-story {
+    font-size: 3.7rem;
+    margin-bottom: 1.5rem;
 }
 
-.the-agent {
-    padding-left: 18rem;
-    padding-right: 18rem;
+.our__story-section {
+    padding-left: 23rem;
+    padding-right: 23rem;
+    padding-top: 8.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.the__agent {
+    padding-left: 26rem;
+    padding-right: 26rem;
     padding-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.the__agent-story {
+    font-size: 3.1rem;
+    margin-bottom: 1.5rem;
 }
