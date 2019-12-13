@@ -9,11 +9,7 @@ html {
     font-size: 62.5%;
 }
 
-.q-logo {
-    width: 9rem;
-}
-
-header{
+header {
     background-image: url(https://images.squarespace-cdn.com/content/v1/5ce82b63338ade0001773744/1560194358763-0FSEP70XI34IL8XXZEQQ/ke17ZwdGBToddI8pDm48kOxLRGAfd8DHyn-VO-OS79h7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlnKv1yxoTk5msUVUpzS-jwidPkl-46T667XTMzLYTMBnw/pickle-perfection-v1.jpg?format=2500w);
     height: 100vh;
     background-size: cover;
@@ -38,7 +34,16 @@ ul li a {
     font-size: 1.7rem;
 }
 
-.quick_solution{
+section {
+    min-height: 100vh;
+}
+
+.q-logo {
+    width: 9rem;
+}
+
+
+.quick_solution {
     display: flex;
     justify-content: center;
     margin-top: 28rem;
@@ -48,7 +53,7 @@ ul li a {
 
 .contact {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .contact__link {
@@ -60,7 +65,8 @@ ul li a {
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     cursor: pointer
 }
 
@@ -89,32 +95,26 @@ p {
 
 .vegi-pics {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-between;
     padding: 4.8rem;
 }
 
-.pickle {
-    width: 42rem;
-    height: 42rem;
+.vegi-pics__img {
+    width: 33.33%;
 }
 
-.cabage {
-    width: 42rem;
-    height: 42rem;
-}
-.chili {
-    width: 42rem;
-    height: 42rem;
+.vegi-pics__img:not(:first-child) {
+    padding-left: 1rem;
 }
 
-
-/* --------- NEW SECTION --------- */
-
-
-
+.section__dill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .dill {
-    padding: 4.5rem ;
+    padding: 4.5rem;
 }
 
 .the-dill {
@@ -132,21 +132,22 @@ p {
     display: flex;
     justify-content: center;
     padding: 1.7rem;
-} 
-        
+}
+
 .contact-formula__link {
     background-color: #f08e80;
-    border: none;
+    border: 2px solid white;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     cursor: pointer
 }
-        
+
 .contact-formula__link:hover {
     background-color: white;
     color: #f08e80;
