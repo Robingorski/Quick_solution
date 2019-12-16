@@ -59,10 +59,51 @@
             <h2 class="the-dill">What’s the Dill?</h2>
             <p class="send-email">Send us a email today to see the answer</p>
             <div class="contact-formula">
-                <a class="contact-formula__link" href="#">Contact</a>
+                
+                <!-- modal test -->
+                
+                <button id="myBtn" class="contact-formula__link">Contact</button>
+                </div>
             </div>
         </div>
     </section>
-</body>
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div  class="modal-content">
+            <div class="modal-header">
+                <h3>Contact</h3>
+                <span class="close">&times;</span>
+            </div>
+
+          <form action="" id="myform" onsubmit = "return validate();">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Last name" id="last name">
+            </div>
+
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+        </div>
+
+            <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
+
+            <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+            </div>
+
+            <div class="submit_button">
+                <input type="submit">
+                <!-- <input href="mailto:nahom@quicksolution.se" type="submit"> -->
+        </div>
+          </form>
+          <div>
+    </div>
+
+
+</body>
+<!--  -->
+<script src="app.js"></script>
 </html>

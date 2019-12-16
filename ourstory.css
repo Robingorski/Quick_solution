@@ -59,16 +59,16 @@ p {
 }
 
 .our__story-section {
-    padding-left: 23rem;
-    padding-right: 23rem;
+    padding-left: 31rem;
+    padding-right: 31rem;
     padding-top: 8.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .the__agent {
-    padding-left: 26rem;
-    padding-right: 26rem;
+    padding-left: 34rem;
+    padding-right: 34rem;
     padding-top: 5.5rem;
     display: flex;
     flex-direction: column;
