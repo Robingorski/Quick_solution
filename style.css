@@ -277,3 +277,17 @@ input[type=submit] {
 }
 
 /* ----------- Scroll-test ------------ */
+
+
+
+
+
+
+
+/* ----------- Mobile usage ------------ */
+
+@media screen and (min-width: 480px) {
+    header {
+      background-image: url(https://w.wallhaven.cc/full/q6/wallhaven-q65wv5.jpg);
+    }
+  }
