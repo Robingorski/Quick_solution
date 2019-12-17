@@ -20,7 +20,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 31rem;
+    width: 31%;
     padding-top: 4.5rem;
     padding-right: 4.5rem;
     padding-bottom: 4.5rem;
@@ -46,9 +46,14 @@ section {
 .quick_solution {
     display: flex;
     justify-content: center;
-    margin-top: 28rem;
+    margin-top: 10%;
     color: white;
     font-size: 4.8rem;
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 500;
 }
 
 .contact {
@@ -85,12 +90,14 @@ section {
 
 h2 {
     font-size: 4.2rem;
+    font-weight: 500;
     margin-bottom: 3.4rem;
     letter-spacing: 0.2rem;
 }
 
 p {
     font-size: 1.7rem;
+    font-weight: 300;
 }
 
 .vegi-pics {
@@ -158,23 +165,23 @@ p {
 
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background-color: white;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 4rem;
-    max-width: 68rem; 
-  
+    max-width: 68rem;
+    margin-top: 9%;
 }
 
 .modal-header {
@@ -185,23 +192,36 @@ p {
 
 h3 {
     font-size: 2.2rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
-form{
+form {
     width: 100%;
 }
+
 .input_field {
     padding: 1.2rem;
 }
+
+.first__last-name {
+    padding: 1.2rem;
+}
+
+/* .input_field>input:nth-child(-n+2) {
+    width: 45%;
+} */
 
 input[type=text] {
     font-family: 'Poppins';
     padding: 1.2rem;
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(204, 204, 204);
-    width: 45%;
+    width: 98%;
     margin: 0.4rem;
+}
+
+.half {
+    width: 48% !important;
 }
 
 textarea {
@@ -211,7 +231,7 @@ textarea {
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(204, 204, 204);
     margin: 0.4rem;
-    width: 100%;
+    width: 98%;
 }
 
 .submit_button {
@@ -229,17 +249,16 @@ input[type=submit] {
     display: inline-block;
     font-size: 1.5rem;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     cursor: pointer
- }
-  
+}
 
-  
+
+
 .close {
     color: black;
     font-size: 2.2rem;
 }
-  
+
 .close:hover,
 .close:focus {
     color: black;

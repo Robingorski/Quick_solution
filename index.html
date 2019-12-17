@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/Q-logo.png" />
 
@@ -18,13 +18,12 @@
         <section>
             <div class="main">
                 <ul>
-                    <li><a href="https://www.quicksolution.se/"><img class="q-logo" src="assets\Q-logo.png"
-                                alt="Q-logo"></a></li>
+                    <li><a href="/"><img class="q-logo" src="assets\Q-logo.png" alt="Q-logo"></a></li>
                     <li><a href="ourstory.html"> Our Story </a></li>
                 </ul>
             </div>
             <div class="quick_solution">
-                <h1>Quick Solution</h1>
+                <h1>“Quick Solution”</h1>
             </div>
             <div class="contact">
                 <a class="contact__link" href="mailto:nahom@quicksolution.se">Contact</a>
@@ -59,51 +58,54 @@
             <h2 class="the-dill">What’s the Dill?</h2>
             <p class="send-email">Send us a email today to see the answer</p>
             <div class="contact-formula">
-                
+
                 <!-- modal test -->
-                
+
                 <button id="myBtn" class="contact-formula__link">Contact</button>
-                </div>
             </div>
+        </div>
         </div>
     </section>
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div  class="modal-content">
+        <div class="modal-content">
             <div class="modal-header">
                 <h3>Contact</h3>
                 <span class="close">&times;</span>
             </div>
 
-          <form action="" id="myform" onsubmit = "return validate();">
-            <div class="input_field">
-                <input type="text" placeholder="Name" id="name">
-                <input type="text" placeholder="Last name" id="last name">
+            <form action="" id="myform" onsubmit="return validate();">
+                <div class="first__last-name">
+                    <input class="half" type="text" placeholder="Name" id="name">
+                    <input class="half" type="text" placeholder="Last name" id="last name">
+                </div>
+
+                <div class="input_field">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+
+                <div class="input_field">
+                    <input type="text" placeholder="Subject" id="subject">
+                </div>
+
+                <div class="input_field">
+                    <textarea placeholder="Message" id="message"></textarea>
+                </div>
+
+                <div class="submit_button">
+                    <input type="submit">
+                    <!-- <input href="mailto:nahom@quicksolution.se" type="submit"> -->
+                </div>
+            </form>
+            <div>
             </div>
-
-            <div class="input_field">
-                <input type="text" placeholder="Email" id="email">
-        </div>
-
-            <div class="input_field">
-                <input type="text" placeholder="Subject" id="subject">
-            </div>
-
-            <div class="input_field">
-                <textarea placeholder="Message" id="message"></textarea>
-            </div>
-
-            <div class="submit_button">
-                <input type="submit">
-                <!-- <input href="mailto:nahom@quicksolution.se" type="submit"> -->
-        </div>
-          </form>
-          <div>
-    </div>
 
 
 </body>
 <!--  -->
 <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
+
 </html>
