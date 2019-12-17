@@ -16,20 +16,25 @@ html {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    width: 31%;
+    width: 23%;
     padding-top: 4.5rem;
-    padding-right: 4.5rem;
-    padding-bottom: 1.5rem;
+    /* padding-right: 4.5rem;
+    padding-bottom: 4.5rem; */
     padding-left: 6.5rem;
     list-style: none;
 }
 
-ul li a {
+li {
+    padding-left: 15%;
+}
+
+.our__story-link {
     text-decoration: none;
     color: black;
     font-size: 1.7rem;
+    font-weight: 300;
 }
 
 section {

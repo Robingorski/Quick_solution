@@ -7,7 +7,7 @@
 html {
     font-family: 'Poppins';
     font-size: 62.5%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 header {
@@ -19,26 +19,30 @@ header {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    width: 31%;
+    width: 23%;
     padding-top: 4.5rem;
-    padding-right: 4.5rem;
-    padding-bottom: 4.5rem;
+    /* padding-right: 4.5rem;
+    padding-bottom: 4.5rem; */
     padding-left: 6.5rem;
     list-style: none;
 }
 
-ul li a {
+li {
+    padding-left: 15%;
+}
+
+.our__story-link {
     text-decoration: none;
     color: white;
     font-size: 1.7rem;
+    font-weight: 300;
 }
 
 section {
     min-height: 100vh;
     scroll-snap-align: start;
-    min-width: 100vw;
 }
 
 .q-logo {
@@ -49,14 +53,13 @@ section {
 .quick_solution {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 22%;
     color: white;
     font-size: 4.8rem;
-    font-weight: 500;
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contact {
@@ -274,8 +277,3 @@ input[type=submit] {
 
 /* ----------- Scroll-test ------------ */
 
-&:nth-of-type(1) {}
-
-&:nth-of-type(2) {}
-
-&:nth-of-type(3) {}
