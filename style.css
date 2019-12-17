@@ -241,6 +241,7 @@ textarea {
     border: 1px solid rgb(204, 204, 204);
     margin: 0.4rem;
     width: 98%;
+    height: 15rem;
 }
 
 .submit_button {
@@ -261,6 +262,15 @@ input[type=submit] {
     cursor: pointer
 }
 
+#error_message{
+    margin-bottom: 20px;
+    background: #f08e80;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    transition: all 0.5s ease;
+  }
 
 
 .close {
