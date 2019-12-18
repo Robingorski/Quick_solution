@@ -54,7 +54,7 @@ function validate() {
     return false;
   }
 
-  if (subject.length < 10) {
+  if (subject.length < 6) {
     text = "Please anter correct subject";
     error_message.innerHTML = text;
     return false;
