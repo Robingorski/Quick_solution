@@ -7,10 +7,23 @@
 html {
     font-family: 'Poppins';
     font-size: 62.5%;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always; */
+    /* overflow-x: hidden; */
 }
 
-header {
+body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+}
+
+section {}
+
+#section-1 {
     background-image: url(https://images.squarespace-cdn.com/content/v1/5ce82b63338ade0001773744/1560194358763-0FSEP70XI34IL8XXZEQQ/ke17ZwdGBToddI8pDm48kOxLRGAfd8DHyn-VO-OS79h7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlnKv1yxoTk5msUVUpzS-jwidPkl-46T667XTMzLYTMBnw/pickle-perfection-v1.jpg?format=2500w);
     height: 100vh;
     background-size: cover;
@@ -40,9 +53,11 @@ li {
     font-weight: 300;
 }
 
-section {
+.section__frame {
     min-height: 100vh;
     scroll-snap-align: center;
+    border: 2px solid black;
+
 }
 
 .q-logo {
@@ -82,6 +97,7 @@ h1 {
 .contact__link:hover {
     background-color: #f08e80;
     color: white;
+
 }
 
 /* --------- NEW SECTION --------- */
@@ -150,7 +166,7 @@ p {
 
 .contact-formula__link {
     background-color: #f08e80;
-    border: 2px solid white;
+    border: 2px solid #f08e80;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -277,7 +293,6 @@ input[type=submit] {
 }
 
 /* ----------- Scroll-test ------------ */
-
 
 
 
