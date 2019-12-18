@@ -7,19 +7,14 @@
 html {
     font-family: 'Poppins';
     font-size: 62.5%;
-    /* scroll-snap-type: mandatory;
+  /*   scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-    scroll-snap-stop: always; */
-    /* overflow-x: hidden; */
+    scroll-snap-stop: always; 
+    overflow-x: hidden;  */
 }
 
-body {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
-}
+body {}
 
 section {}
 
@@ -55,8 +50,8 @@ li {
 
 .section__frame {
     min-height: 100vh;
-    scroll-snap-align: center;
-    border: 2px solid black;
+    scroll-snap-align: start;
+    /* border: 2px solid black; */
 
 }
 

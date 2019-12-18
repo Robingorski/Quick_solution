@@ -1,12 +1,7 @@
 /* Modal function STARTS */
 var modal = document.getElementById("myModal");
-
-
 var btn = document.getElementById("myBtn");
-
-
 var span = document.getElementsByClassName("close")[0];
-
 
 btn.onclick = function () {
   modal.style.display = "block";
@@ -49,25 +44,25 @@ function validate() {
   }
 
   if (email.indexOf("@") == -1 || email.length < 6) {
-    text = "Please Enter valid Email";
+    text = "Please enter valid Email";
     error_message.innerHTML = text;
     return false;
   }
 
   if (subject.length < 6) {
-    text = "Please anter correct subject";
+    text = "Please enter correct subject";
     error_message.innerHTML = text;
     return false;
   }
 
 
   if (message.length <= 10) {
-    text = "Please Enter more than 10 characters";
+    text = "Please enter more than 10 characters";
     error_message.innerHTML = text;
     return false;
   }
 
-  alert("Form Submitted Successfully!");
+  alert("Form submitted successfully!");
   return true;
 }
 
