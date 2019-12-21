@@ -8,10 +8,6 @@ html {
     font-family: 'Poppins';
     font-size: 62.5%;
     scroll-behavior: smooth;
-  /*   scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always; */
     overflow-x: hidden;  
 }
 
@@ -27,23 +23,12 @@ section {}
     min-height: 100vh;
 }
 
-#section-2 {
- 
-}
-
-#section-3 {
-  
-}
-
 ul {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 23%;
-    padding-top: 4.5rem;
-    /* padding-right: 4.5rem;
-    padding-bottom: 4.5rem; */
-    padding-left: 6.5rem;
+    padding-top: 3%;
+    padding-left: 4%;
     list-style: none;
 }
 
@@ -304,8 +289,4 @@ input[type=submit] {
 
 /* ----------- Mobile usage ------------ */
 
-/* @media screen and (min-width: 480px) {
-    header {
-      background-image: url(https://w.wallhaven.cc/full/q6/wallhaven-q65wv5.jpg);
-    }
-  } */
+ 
