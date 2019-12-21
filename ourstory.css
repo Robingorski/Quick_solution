@@ -68,9 +68,9 @@ p {
 }
 
 .our__story-section {
-    padding-left: 12%;
-    padding-right: 4%;
-    /* padding-top: 8.5%; */
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 9.5%;
     display: flex;
     flex-direction: column;
 }
@@ -78,8 +78,8 @@ p {
 .the__agent {
     padding-left: 22%;
     padding-right: 21%;
-    padding-top: 5.5%;
-    display: flex;
+    padding-top: 18.5%;
+    padding-bottom: 20%;
     flex-direction: column;
 }
 

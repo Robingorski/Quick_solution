@@ -11,8 +11,8 @@ html {
   /*   scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-    scroll-snap-stop: always; 
-    overflow-x: hidden;  */
+    scroll-snap-stop: always; */
+    overflow-x: hidden;  
 }
 
 body {}
@@ -24,7 +24,7 @@ section {}
     height: 100vh;
     background-size: cover;
     background-position: center;
-
+    min-height: 100vh;
 }
 
 #section-2 {
@@ -58,13 +58,6 @@ li {
     font-weight: 300;
 }
 
-.section__frame {
-    min-height: 100vh;
-    scroll-snap-align: start;
-    /* border: 2px solid black; */
-
-}
-
 .q-logo {
     width: 9rem;
 }
@@ -72,7 +65,7 @@ li {
 .quick_solution {
     display: flex;
     justify-content: center;
-    margin-top: 22%;
+    margin-top: 16%;
     color: white;
     font-size: 4.8rem;
 }
@@ -108,9 +101,11 @@ h1 {
 /* --------- NEW SECTION --------- */
 
 .onlyTheBest {
-    margin-left: 12.6rem;
-    padding-left: 5.8rem;
-    padding-top: 4.5rem;
+    margin-left: 3%;
+    padding-left: 4%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -127,12 +122,15 @@ p {
 
 .vegi-pics {
     display: flex;
-    justify-content: space-between;
-    padding: 4.8rem;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .vegi-pics__img {
-    width: 33.33%;
+    width: 30%;
+    /* height: 29.33%; */
 }
 
 .vegi-pics__img:not(:first-child) {
