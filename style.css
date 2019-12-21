@@ -287,6 +287,16 @@ input[type=submit] {
 
 
 
-/* ----------- Mobile usage ------------ */
+/* ----------- Small screen usage ------------ */
 
- 
+@media screen and (min-width:769px) and (max-width: 1300px) {
+
+    ul {
+        width: 30%;
+    }
+    
+    .vegi-pics {
+        padding-top: 5%;
+    }
+
+}
