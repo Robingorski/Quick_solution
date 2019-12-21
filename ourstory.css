@@ -88,11 +88,44 @@ p {
 
 
 
+/* ----------- Mobile usage ------------ */
+@media only screen and (max-width 480px) {
 
+    p {
+        font-size: 3.8rem;
+    }
+
+    li{
+        width: 55%
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        padding-top: 3%;
+        padding-left: 3.5%;
+        list-style: none;
+    }
+
+    .our__story-section {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 9.5%;
+    }
+
+    .the__agent {
+        padding: 7%;
+    }
+} 
+
+
+
+/* ----------- Mobile usage ends ------------ */
 
 /* ----------- Smallscreen usage ------------ */
 
-@media screen and (min-width:769px) and (max-width: 1300px) {
+@media only screen and (max-width:1300px) {
     p {
         font-size: 1.8rem;
         margin-bottom: 1%;
@@ -102,9 +135,12 @@ p {
     }
 
     ul {
-        width: 30%;
+        width: 60%;
     }
 
+    li {
+        width: 55%
+    }
     .our-story {
         margin-bottom: 1rem;
     }
@@ -119,30 +155,3 @@ p {
 
 /* ----------- Smallscreen usage ends ------------ */
 
-/* ----------- Mobile usage ------------ */
-@media screen and (min-width:320px) and (max-width 768px) {
-
-    p {
-        font-size: 1.8rem;
-        margin-bottom: 1%;
-        font-style: normal;
-        line-height: 3rem;
-        font-weight: 300;
-    }
-
-    ul {
-        display: flex;
-        align-items: center;
-        width: 30%;
-        padding-top: 3%;
-        padding-left: 3.5%;
-        list-style: none;
-    }
-
-
-
-} 
-
-
-
-/* ----------- Mobile usage ends ------------ */
