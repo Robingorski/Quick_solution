@@ -12,6 +12,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #section-1 {
     background-image: url(https://images.squarespace-cdn.com/content/v1/5ce82b63338ade0001773744/1560194358763-0FSEP70XI34IL8XXZEQQ/ke17ZwdGBToddI8pDm48kOxLRGAfd8DHyn-VO-OS79h7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlnKv1yxoTk5msUVUpzS-jwidPkl-46T667XTMzLYTMBnw/pickle-perfection-v1.jpg?format=2500w);
     height: 100vh;
@@ -89,7 +93,7 @@ h1 {
 .onlyTheBest {
     margin-left: 3%;
     padding-left: 4%;
-    padding-top: 3%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -112,14 +116,11 @@ p {
     padding-top: 10%;
     padding-left: 3%;
     padding-right: 3%;
-    align-items: flex-start;
-    /* denna fixade mobile view med bilderna*/
+
 }
 
 .vegi-pics__img {
-    width: 30%;
-
-    /* height: 29.33%; */
+    width: 25%;
 }
 
 .vegi-pics__img:not(:first-child) {
@@ -188,6 +189,8 @@ p {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    
+    overflow-y: hidden;
 }
 
 .modal-content {
@@ -328,7 +331,23 @@ input[type=submit] {
         margin-top: 50%;
     }
 
+    .vegi-pics {
+        align-items: center; 
+        /* denna fixade mobile view med bilderna*/
+    }
+
+    .vegi-pics__img {
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+
     .dill {
         padding: 0.5rem;
     }
+
+    .half {
+        width: 46% !important;
+    }
+
+
 }
