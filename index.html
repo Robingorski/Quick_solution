@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/Q-logo.png" />
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-
-
     <title>Quick Solution</title>
-</head>
+
 
 <body id="body">
     <div class="app">
-        <header>
             <section id="section-1" class="section__frame">
-                <div class="main">
+                <div class="main" data-aos="fade-right">
                     <ul>
                         <a href="/"><img class="q-logo" src="assets\Q-logo.png" alt="Q-logo"></a>
                         <li><a class="our__story-link" href="ourstory.html"> Our Story </a></li>
@@ -30,7 +27,6 @@
                 <div class="contact" data-aos="zoom-in">
                     <a class="contact__link" href="mailto:nahom@quicksolution.se">Contact</a>
                 </div>
-        </header>
         </section>
 
 
@@ -45,9 +41,9 @@
             </div>
 
             <div class="vegi-pics" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-                <img class="vegi-pics__img" src="assets/green-pickle.jpeg" alt="green-pickle" srcset="">
-                <img class="vegi-pics__img" src="assets/chili.jpeg" alt="chili" srcset="">
-                <img class="vegi-pics__img" src="assets/kabage.jpeg" alt="cabage" srcset="">
+                <img class="vegi-pics__img" src="assets/green-pickle.jpeg" alt="green-pickle">
+                <img class="vegi-pics__img" src="assets/chili.jpeg" alt="chili">
+                <img class="vegi-pics__img" src="assets/kabage.jpeg" alt="cabage">
             </div>
         </section>
 
@@ -60,9 +56,6 @@
                     <h2 class="the-dill">What’s the Dill?</h2>
                     <p class="send-email">Send us a email today to see the answer</p>
                     <div class="contact-formula">
-
-                        <!-- modal test -->
-
                         <button id="myBtn" class="contact-formula__link">Contact</button>
                     </div>
                 </div>
@@ -70,15 +63,13 @@
     </div>
     </section>
     <div id="myModal" class="modal">
-
-        <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Contact</h3>
                 <span class="close">&times;</span>
             </div>
 
-            <form action="" id="myform" onsubmit="return validate();">
+            <form id="myform" onsubmit="return validate();">
                 <div id="error_message"></div>
                 <div class="input_field">
                     <input class="half" type="text" placeholder="First name" id="first_name">
@@ -107,7 +98,6 @@
 
         </div>
 </body>
-<!--  -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/ScrollToPlugin.js"></script>

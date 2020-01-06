@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="ourstory.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/Q-logo.png" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 
 
     <title>Quick Solution</title>
 </head>
 
 <body>
-    <header>
         <section>
-            <div class="main">
+            <div class="main" data-aos="fade-right">
                 <ul>
                     <a href="/"><img class="q-logo" src="assets\Q-logo.png" alt="Q-logo"></a>
                     <li><a class="our__story-link" href="ourstory.html"> Our Story </a></li>
@@ -37,7 +37,6 @@
                     We are simply the best for the best!
                 </p>
             </div>
-    </header>
     </section>
     <section>
         <div class="the__agent">
@@ -55,5 +54,10 @@
     </section>
 
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/ScrollToPlugin.js"></script>
+<script src="animation.js"></script>
 
 </html>

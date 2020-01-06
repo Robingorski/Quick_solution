@@ -33,7 +33,7 @@ ul {
     align-items: center;
     width: 23%;
     padding-top: 3%;
-    padding-left: 4%;
+    padding-left: 3.5%;
     list-style: none;
 }
 
@@ -189,7 +189,6 @@ p {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    
     overflow-y: hidden;
 }
 
@@ -274,7 +273,6 @@ input[type=submit] {
     transition: all 0.5s ease;
 }
 
-
 .close {
     color: black;
     font-size: 2.2rem;
@@ -287,13 +285,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* ----------- Scroll-test ------------ */
-
-
-
-
-
-
 /* ----------- Small screen usage ------------ */
 
 @media only screen and (max-width:1300px) {
@@ -305,10 +296,10 @@ input[type=submit] {
     .vegi-pics {
         padding-top: 5%;
     }
-
 }
 
-
+/* ----------- Small screen usage ends ------------ */
+/* ----------- Mobile usage ------------ */
 
 @media only screen and (max-width: 480px) {
     h1 {
@@ -333,7 +324,6 @@ input[type=submit] {
 
     .vegi-pics {
         align-items: center; 
-        /* denna fixade mobile view med bilderna*/
     }
 
     .vegi-pics__img {
@@ -348,6 +338,5 @@ input[type=submit] {
     .half {
         width: 46% !important;
     }
-
-
 }
+/* ----------- Mobile usage ENDS------------ */
