@@ -296,6 +296,10 @@ input[type=submit] {
     .vegi-pics {
         padding-top: 5%;
     }
+
+    .modal-content {
+        margin-top: 3%;
+    }
 }
 
 /* ----------- Small screen usage ends ------------ */
@@ -323,7 +327,7 @@ input[type=submit] {
     }
 
     .vegi-pics {
-        align-items: center; 
+        align-items: center;
     }
 
     .vegi-pics__img {
@@ -335,8 +339,13 @@ input[type=submit] {
         padding: 0.5rem;
     }
 
+    .modal-content {
+        margin-top: 28%;
+    }
+
     .half {
         width: 46% !important;
     }
 }
+
 /* ----------- Mobile usage ENDS------------ */
