@@ -11,8 +11,8 @@ btn.onclick = function () {
 
 span.onclick = function () {
   modal.style.display = "none";
-  body.style.overflowY = "auto";
-  html.style.overflowY = "auto";
+  body.style.overflowY = "scroll";
+  html.style.overflowY = "scroll";
 }
 
 window.onclick = function (event) {
