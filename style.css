@@ -349,6 +349,7 @@ input {
     .modal-content {
         margin-top: 19%;
         max-width: 90%;
+        padding: 6%;
     }
 
     .half {

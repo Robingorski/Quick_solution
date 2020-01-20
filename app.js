@@ -18,8 +18,8 @@ span.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none"; 
-    body.style.overflow = "auto";
-    html.style.overflow = "auto";
+    body.style.overflowY = "scroll";
+    html.style.overflowY = "scroll";
   }
 }
 
