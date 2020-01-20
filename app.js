@@ -5,14 +5,14 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
   modal.style.display = "block";
-  body.style.overflow = "hidden";
-  html.style.overflow = "hidden";
+  body.style.overflowY = "hidden";
+  html.style.overflowY = "hidden";
 }
 
 span.onclick = function () {
   modal.style.display = "none";
-  body.style.overflow = "auto";
-  html.style.overflow = "auto";
+  body.style.overflowY = "auto";
+  html.style.overflowY = "auto";
 }
 
 window.onclick = function (event) {
