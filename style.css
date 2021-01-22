@@ -263,6 +263,13 @@ input[type=submit] {
     cursor: pointer
 }
 
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 #error_message {
     margin-bottom: 20px;
     background: #f08e80;
@@ -340,7 +347,9 @@ input[type=submit] {
     }
 
     .modal-content {
-        margin-top: 28%;
+        margin-top: 19%;
+        max-width: 90%;
+        padding: 6%;
     }
 
     .half {
