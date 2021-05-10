@@ -78,7 +78,7 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer
 }
 
@@ -166,7 +166,7 @@ p {
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer
 }
 
@@ -259,7 +259,7 @@ input[type=submit] {
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
-    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer
 }
 
