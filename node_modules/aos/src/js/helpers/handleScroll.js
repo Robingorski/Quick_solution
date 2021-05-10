@@ -1,86 +1,39 @@
-import detect from './detector';
-
-/**
- * Adds multiple classes on node
- * @param {DOMNode} node
- * @param {array}  classes
- */
-const addClasses = (node, classes) =>
-  classes && classes.forEach(className => node.classList.add(className));
-
-/**
- * Removes multiple classes from node
- * @param {DOMNode} node
- * @param {array}  classes
- */
-const removeClasses = (node, classes) =>
-  classes && classes.forEach(className => node.classList.remove(className));
-
-const fireEvent = (eventName, data) => {
-  let customEvent;
-
-  if (detect.ie11()) {
-    customEvent = document.createEvent('CustomEvent');
-    customEvent.initCustomEvent(eventName, true, true, { detail: data });
-  } else {
-    customEvent = new CustomEvent(eventName, {
-      detail: data
-    });
-  }
-
-  return document.dispatchEvent(customEvent);
-};
-
 /**
  * Set or remove aos-animate class
  * @param {node} el         element
  * @param {int}  top        scrolled distance
+ * @param {void} once
  */
-const applyClasses = (el, top) => {
-  const { options, position, node, data } = el;
+const setState = function (el, top, once) {
+  const attrOnce = el.node.getAttribute('data-aos-once');
 
-  const hide = () => {
-    if (!el.animated) return;
-
-    removeClasses(node, options.animatedClassNames);
-    fireEvent('aos:out', node);
-
-    if (el.options.id) {
-      fireEvent(`aos:in:${el.options.id}`, node);
+  if (top > el.position) {
+    el.node.classList.add('aos-animate');
+  } else if (typeof attrOnce !== 'undefined') {
+    if (attrOnce === 'false' || (!once && attrOnce !== 'true')) {
+      el.node.classList.remove('aos-animate');
     }
-
-    el.animated = false;
-  };
-
-  const show = () => {
-    if (el.animated) return;
-
-    addClasses(node, options.animatedClassNames);
-
-    fireEvent('aos:in', node);
-    if (el.options.id) {
-      fireEvent(`aos:in:${el.options.id}`, node);
-    }
-
-    el.animated = true;
-  };
-
-  if (options.mirror && top >= position.out && !options.once) {
-    hide();
-  } else if (top >= position.in) {
-    show();
-  } else if (el.animated && !options.once) {
-    hide();
   }
 };
+
 
 /**
  * Scroll logic - add or remove 'aos-animate' class on scroll
  *
  * @param  {array} $elements         array of elements nodes
+ * @param  {bool} once               plugin option
  * @return {void}
  */
-const handleScroll = $elements =>
-  $elements.forEach((el, i) => applyClasses(el, window.pageYOffset));
+const handleScroll = function ($elements, once) {
+  const scrollTop = window.pageYOffset;
+  const windowHeight = window.innerHeight;
+  /**
+   * Check all registered elements positions
+   * and animate them on scroll
+   */
+  $elements.forEach((el, i) => {
+    setState(el, windowHeight + scrollTop, once);
+  });
+};
 
 export default handleScroll;

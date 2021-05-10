@@ -1,11 +1,11 @@
 /**
- * Get offset of DOM element
- * like there were no transforms applied on it
+ * Get offset of DOM element Helper
+ * including these with translation
  *
  * @param  {Node} el [DOM element]
  * @return {Object} [top and left offset]
  */
-const offset = function(el) {
+const offset = function (el) {
   let _x = 0;
   let _y = 0;
 
